@@ -115,12 +115,17 @@ p{
 .button{
 	padding: 10px;
 	background-color: $primary-color-dark;
+	color: $primary-color-light;
+	border-radius: 5px;
+	margin: 10px;
 }
 
 .button-grey-out{
-	display: inline-block;
 	padding: 10px;
 	background-color: $primary-color-light;
+	color: $primary-color-dark;
+	border-radius: 5px;
+	margin: 10px;
 }
 
 .page-number{
