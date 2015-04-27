@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 {% include head.html %}
-<body>
+<body onload="stretch_footer()" onresize="stretch_footer()">
 	{% include header.html %}
 	<div class="content" id="blog">
 		{% for post in paginator.posts %}
