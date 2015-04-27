@@ -1,2 +1,52 @@
 ---
 ---
+
+@mixin fading-underline($color){
+	border-bottom: 1px solid rgba($color, 0);
+	-webkit-transition: border $fade-time ease;
+	-moz-transition: border $fade-time ease;
+	-ms-transition: border $fade-time ease;
+	-o-transition: border $fade-time ease;
+	transition: border $fade-time ease; 
+	&:hover{border-bottom: 1px solid rgba($color, 1);}
+}
+
+a{
+	text-decoration: none;
+	color: #d7dcee;
+	margin: 10px;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #2f68a1;
+	color: #d7dcee;
+	text-align: center;
+	margin: 0px;
+	
+}
+
+.nav{
+	
+}
+
+#webnav{
+	text-align: right;
+	margin: 10px;
+	margin-right: 100px;
+}
+
+#mobnav{
+	display: none;
+	text-align: left;
+	a{
+		display: block;
+	}
+}
+
+
+@media all and (max-width: 400px){
+	#webnav{display: none;}
+	#mobnav{display: inline;}
+	
+}
