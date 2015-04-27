@@ -19,19 +19,19 @@
 			{% if paginator.previous_page %}
 			<a href="{{ paginator.previous_page_path }}" class="button">&lt;</a>
 			{% else %}
-			<div class="button-container">
-				<span class="button-grey-out"></span> 
-				<span class="button">&lt;</span>
-			</div>	
+
+				<span class="button-grey-out">&lt;</span> 
+
+
 			{% endif %}
 			<h2 class="page-number"> Page: {{ paginator.page }} of {{ paginator.total_pages }}</h2>
 			{% if paginator.next_page %}
 			<a href="{{ paginator.next_page_path }}" class="button">&gt;</a>
 			{% else %}
-			<div class="button-container">
-				<span class="button-grey-out"></span> 
-				<span class="button">&gt;</span>
-			</div>	
+
+				<span class="button-grey-out">&gt;</span> 
+
+
 			{% endif %}
 		</div>
 	</div>
