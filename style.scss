@@ -1,6 +1,12 @@
 ---
 ---
 
+$primary-color-light: #d7dcee;
+$primary-color-dark: #2f68a1;
+$blog-title-font-size: 1.5em;
+$max-blog-title-length: 800px;
+$max-page-width: 1200px;
+
 @mixin fading-underline($color){
 	border-bottom: 1px solid rgba($color, 0);
 	-webkit-transition: border $fade-time ease;
@@ -11,40 +17,98 @@
 	&:hover{border-bottom: 1px solid rgba($color, 1);}
 }
 
-a{
-	text-decoration: none;
-	color: #d7dcee;
-	margin: 10px;
+.content{
+	max-width: $max-page-width;
+	margin: 0px auto;
 }
 
 body{
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	margin: 0px;
-	
+	text-align: left;
 }
 
+a{
+	text-decoration: none;
+	color: $primary-color-dark;
+}
+
+p{
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+
+/* Navigation bar */
 .nav{
-	background-color: #2f68a1;
+	background-color: $primary-color-dark;
 }
 
 #webnav{
 	text-align: right;
 	padding: 10px;
 	padding-right: 100px;
+	a{		
+		color: $primary-color-light;
+		margin: 10px;
+	}
 }
 
 #mobnav{
 	display: none;
 	text-align: left;
 	a{
+		color: $primary-color-light;
+		margin: 10px;
 		display: block;
 	}
 }
 
+/* Blog stuff */
+
+
+.title{
+	display: inline-block;
+	float: left;
+	margin: 0px;
+	font-size: $blog-title-font-size;
+	padding-left: 10px;
+}
+
+.date{
+	overflow: hidden;
+	text-align: right;
+	margin: 0px;
+	padding-right: 10px;
+}
+
+.post{
+	
+}
+
+.blogdivider{
+	width:100%;
+	height:1px;
+	background: $primary-color-dark;
+	overflow: hidden;
+}
+
+.aligner{
+	font-size: $blog-title-font-size;
+	
+}
+
+
+/* Media queries */
 
 @media all and (max-width: 400px){
 	#webnav{display: none;}
 	#mobnav{display: inline;}
-	
+
+}
+
+@media all and (max-width: $max-blog-title-length){
+		.title{float: none; text-align: left;}
+	.date{text-align: left; padding-left: 10px;}
 }
