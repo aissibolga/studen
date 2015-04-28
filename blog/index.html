@@ -1,40 +1,31 @@
 ---
 ---
-<!DOCTYPE html>
 
-{% include head.html %}
-<body onload="stretch_footer()" onresize="stretch_footer()">
-	{% include header.html %}
-	<div class="content" id="blog">
-		{% for post in paginator.posts %}
-		<div class="post">
-			<a href="{{post.url}}"> <h2 class="title">{{post.title}}</h2></a>
-			<p class="date"><span class="aligner"></span>{{ post.date | date_to_long_string }}</p>
-			<div class="blogdivider"></div>
-			{{post.content}}
-		</div>
-		{% endfor %}
-		
-		<div class="pagination-links">
-			{% if paginator.previous_page %}
-			<a href="{{ paginator.previous_page_path }}" class="button">&lt;</a>
-			{% else %}
+{% for post in paginator.posts %}
+<div class="post">
+	<a href="{{post.url}}"> <h2 class="title">{{post.title}}</h2></a>
+	<p class="date"><span class="aligner"></span>{{ post.date | date_to_long_string }}</p>
+	<div class="blogdivider"></div>
+	{{post.content}}
+</div>
+{% endfor %}
 
-				<span class="button-grey-out">&lt;</span> 
-
-
-			{% endif %}
-			<h2 class="page-number"> Page: {{ paginator.page }} of {{ paginator.total_pages }}</h2>
-			{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path }}" class="button">&gt;</a>
-			{% else %}
-
-				<span class="button-grey-out">&gt;</span> 
-
-
-			{% endif %}
-		</div>
-	</div>
+<div class="pagination-links">
+	{% if paginator.previous_page %}
+	<a href="{{ paginator.previous_page_path }}" class="button">&lt;</a>
+	{% else %}
 	
-	{% include footer.html %}
-</body>
+	<span class="button-grey-out">&lt;</span> 
+	
+	
+	{% endif %}
+	<h2 class="page-number"> Page: {{ paginator.page }} of {{ paginator.total_pages }}</h2>
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path }}" class="button">&gt;</a>
+	{% else %}
+	
+	<span class="button-grey-out">&gt;</span> 
+	
+	
+	{% endif %}
+</div>
