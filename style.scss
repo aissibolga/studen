@@ -17,6 +17,27 @@ $max-page-width: 1200px;
 	&:hover{border-bottom: 1px solid rgba($color, 1);}
 }
 
+#home{
+	background: url('images/homepage.JPG') repeat 50% -150px transparent;
+	background-size: cover;
+	background-repeat:no-repeat;
+	overflow:hidden;	
+	
+	position: fixed;
+	top: 54px;
+	bottom: 43px;
+	left: 0px;
+	right: 0px;
+	/*
+	height:100%;
+	width: 100%;
+	*/
+}
+
+
+
+
+
 .content{
 	max-width: $max-page-width;
 	margin: 0px auto;
@@ -95,6 +116,13 @@ p{
 
 .post{
 	margin-top: 10px;
+	text-align: justify;
+}
+
+.post img{
+	max-width: 500px;
+	max-height: 500px;
+	float: left;
 }
 
 .blogdivider{
@@ -137,13 +165,14 @@ p{
 
 #footer{
 	background-color: $primary-color-dark;
-	margin-top: 100px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	width: 100%;
 	text-align: center;
 	color: $primary-color-light;
 	font-size: 20px;
+	position: fixed;
+	bottom: 0px;
 }
 
 

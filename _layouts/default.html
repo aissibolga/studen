@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-
+<html style="height: 100%">
 {% include head.html %}
-<body onload="stretch_footer()" onresize="stretch_footer()">
+<body onload="stretch_footer()" onresize="stretch_footer()" style="height: 100%">
 	{% include header.html %}
-	<div class="content" id="about">
+	
 	
 		{{ content }}
 	
-	</div>
 	
 	{% include footer.html %}
 </body>
+</html>
