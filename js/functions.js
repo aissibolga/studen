@@ -38,15 +38,18 @@ function stretch_footer()
 		//alert(oxcont.clientHeight);
 		if( cont != null )
 		{
-			if( cont.clientHeight < windowHeight - footerHeight - headerHeight )
+			if( cont.clientHeight > windowHeight - footerHeight - headerHeight )
 			{
-				foot.style.position = "absolute";
-				foot.style.bottom = "0px";
+				console.log("if");
+				foot.style.position = "relative";
+				foot.style.bottom ="";
 			}
 			else
 			{
-				foot.style.position = "";
-				foot.style.bottom ="";
+				console.log("else");
+				foot.style.position = "fixed";
+				foot.style.bottom = "0px";
+				
 			}
 		}
 		
