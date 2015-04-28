@@ -17,8 +17,10 @@ $max-page-width: 1200px;
 	&:hover{border-bottom: 1px solid rgba($color, 1);}
 }
 
+
+/* Home Page */
 #home{
-	background: url('images/homepage.JPG') repeat 50% -150px transparent;
+	background: url('images/homepage.JPG') repeat 50% transparent;
 	background-size: cover;
 	background-repeat:no-repeat;
 	overflow:hidden;	
@@ -32,6 +34,30 @@ $max-page-width: 1200px;
 	height:100%;
 	width: 100%;
 	*/
+}
+#homecontent{
+	a{
+		color: $primary-color-light;
+		padding: 20px;
+		margin: 20px;
+		border-radius: 10px;
+		background-color: $primary-color-dark;
+	}
+	
+}
+
+#getInvolved{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+#homelinks{
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	transform: translateY(-50%) translateX(-50%);
 }
 
 
