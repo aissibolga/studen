@@ -6,6 +6,7 @@ $primary-color-dark: #2f68a1;
 $blog-title-font-size: 1.5em;
 $max-blog-title-length: 850px;
 $max-page-width: 1200px;
+$header-height: 60px;
 
 @mixin fading-underline($color){
 	border-bottom: 1px solid rgba($color, 0);
@@ -19,21 +20,14 @@ $max-page-width: 1200px;
 
 
 /* Home Page */
-#home{
-	background: url('images/homepage.JPG') repeat 50% transparent;
+#hometop{
+	background: url('images/homepage.JPG');
 	background-size: cover;
-	background-repeat:no-repeat;
-	overflow:hidden;	
+	top: $header-height;
+	height: 1000px;
+	width:100%;
 	
-	position: fixed;
-	top: 54px;
-	bottom: 43px;
-	left: 0px;
-	right: 0px;
-	/*
-	height:100%;
-	width: 100%;
-	*/
+
 }
 #homecontent{
 	a{
@@ -43,6 +37,8 @@ $max-page-width: 1200px;
 		border-radius: 10px;
 		background-color: $primary-color-dark;
 	}
+	max-width: 100%;
+	
 	
 }
 
@@ -61,7 +57,7 @@ $max-page-width: 1200px;
 }
 
 
-
+/* General */
 
 
 .content{
@@ -96,9 +92,10 @@ p{
 
 #webnav
 {
+	position: fixed;
 	color: $primary-color-light;
 	width: 100%;
-	height: 60px;
+	height: $header-height;
 	z-index: 1000;
 	text-align: right;
 }

@@ -41,7 +41,7 @@ function stretch_footer()
 			if( cont.clientHeight > windowHeight - footerHeight - headerHeight )
 			{
 				console.log("if");
-				foot.style.position = "relative";
+				foot.style.position = "static";
 				foot.style.bottom ="";
 			}
 			else
