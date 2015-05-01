@@ -44,11 +44,18 @@ $header-height-plus-ten: 70px;
 	
 }
 
-#getInvolved{
+#getInvolved a{
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 75%;
 	transform: translateY(-50%) translateX(-50%);
+	color: $primary-color-dark;
+	background: $primary-color-light;
+}
+
+#homedivider{
+	height: 60px;
+	background: $primary-color-dark;
 }
 
 h1{
