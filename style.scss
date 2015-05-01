@@ -51,11 +51,27 @@ $header-height-plus-ten: 70px;
 	transform: translateY(-50%) translateX(-50%);
 }
 
-#homelinks{
-	position: absolute;
-	left: 50%;
-	top: 75%;
-	transform: translateY(-50%) translateX(-50%);
+h1{
+	color: $primary-color-dark;
+}
+
+.homebox{
+	width: 350px;
+	height: 250px;
+	display: inline-block;
+	text-align: justify;
+	border: 2px solid $primary-color-dark;
+	border-radius: 8px;
+	vertical-align: top;
+	h2{
+		text-align: center;
+		color: $primary-color-dark;
+	}
+	
+	ul{
+		padding-left: 2em;
+		padding-right: 1em;	
+	}
 }
 
 
@@ -66,6 +82,7 @@ $header-height-plus-ten: 70px;
 	max-width: $max-page-width;
 	margin: 0px auto;
 	margin-top: $header-height-plus-ten;
+	text-align: center;
 }
 
 
