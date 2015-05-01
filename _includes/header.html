@@ -1,5 +1,5 @@
 <div id="webnav" class="nav"> 
-	<img src="/images/hamburger.svg" onclick="expandmobnav()">
+	<img id="hamburger" src="/images/hamburger.svg" onclick="expandmobnav()">
 	<div id="navtitle">
 		<a href="/index.html" id="headertitle">Students4Students</a>
 	</div>
@@ -40,15 +40,14 @@
 
 <div id="mobnav" class="nav"> 
 	<div id="mobnavtitle">
-		<a href="/index.html" id="mobheadertitle">Students4Students</a>
 		
 	</div>
 	<nav id="mobnavcontent">
 		<ul class="mobmenulist">
 			<li><a href="/index.html">Home</a></li>
 			<li class="mobdropdownitem">
-				<label>About Us</label>
-
+				<label for="about-us">About Us</label>
+				<input id="about-us" type="checkbox" style="display: none">
 				<ul class="mobdropdownlist">
 					<li><a href="/about-what-we-do.html">What we do</a></li>
 					
@@ -63,8 +62,8 @@
 			</li>
 			
 			<li class="mobdropdownitem">
-				<label>Get Involved</label>
-				
+				<label for="get-involved">Get Involved</label>
+				<input id="get-involved" type="checkbox" style="display: none">
 				<ul class="mobdropdownlist">
 					<li><a href="/get-involved-tutors.html">For Tutors</a></li>
 					
