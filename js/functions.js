@@ -55,3 +55,12 @@ function stretch_footer()
 		
 	}
 }
+
+function expandmobnav()
+{
+	if( document.getElementById('mobnav').style.left=="0px"){
+		document.getElementById('mobnav').style.left="-300px"
+	}else{
+		document.getElementById('mobnav').style.left="0px"
+	}
+}

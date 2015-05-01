@@ -255,8 +255,11 @@ img{
 
 
 #mobnav{
-	display: none;
+	/*display: none;*/
 	text-align: left;
+	max-width: 300px;
+	left: -300px;
+	position: fixed;
 	a{
 		color: $primary-color-light;
 		margin: 10px;

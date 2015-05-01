@@ -1,4 +1,5 @@
 <div id="webnav" class="nav"> 
+	<img src="/images/hamburger.svg" onclick="expandmobnav()">
 	<div id="navtitle">
 		<a href="/index.html" id="headertitle">Students4Students</a>
 	</div>
@@ -38,7 +39,39 @@
 
 
 <div id="mobnav" class="nav"> 
-	<a href="/index.html">Home</a>
-	<a href="/about.html">About us</a>
-	<a href="/blog/index.html">Blog</a>
+	<div id="mobnavtitle">
+		<a href="/index.html" id="mobheadertitle">Students4Students</a>
+		
+	</div>
+	<nav id="mobnavcontent">
+		<ul class="mobmenulist">
+			<li><a href="/index.html">Home</a></li>
+			<li class="mobdropdownitem">
+				<label>About Us</label>
+
+				<ul class="mobdropdownlist">
+					<li><a href="/about-what-we-do.html">What we do</a></li>
+					
+					<li><a href="/about-our-journey.html">Our Journey</a></li>
+					
+					<li><a href="/about-the-committee.html">Meet the Committee</a></li>
+					
+					<li><a href="/about-the-trustees.html">Meet the Trustees</a></li>
+				
+				</ul>
+					
+			</li>
+			
+			<li class="mobdropdownitem">
+				<label>Get Involved</label>
+				
+				<ul class="mobdropdownlist">
+					<li><a href="/get-involved-tutors.html">For Tutors</a></li>
+					
+					<li><a href="/get-involved-schools.html">For Schools</a></li>
+				</ul>
+			</li>
+			<li><a href="/blog/index.html">Blog</a></li>
+		</ul>
+	</nav>
 </div>
