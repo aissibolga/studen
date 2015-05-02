@@ -472,7 +472,13 @@ img{
 	#headertitle{display: none;}
 	#headertitlemob{display: inline;}
 }
-
+@media all and (max-width: 350px){
+	.homebox{max-width: 95%; height: auto;}
+	.com-post img{max-width: 95%}
+}
+@media all and (max-width: 1121px){
+	.com-post{height: auto;}
+}
 
 @media all and (max-width: $max-blog-title-length){
 		.title{float: none; text-align: left;}
