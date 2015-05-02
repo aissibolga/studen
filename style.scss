@@ -266,7 +266,7 @@ img{
 
 
 #mobnav{
-	/*display: none;*/
+	z-index: 1000;
 	text-align: left;
 	max-width: 300px;
 	left: -300px;
