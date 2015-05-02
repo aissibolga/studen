@@ -346,6 +346,8 @@ img{
 
 #hamburger{display: none;}
 
+#headertitlemob{display: none}
+
 /* Blog stuff */
 
 
@@ -467,10 +469,10 @@ img{
 	#navcontent{display: none;}
 }
 @media all and (max-width: 400px){
-	#webnav{display: none;}
-	#mobnav{display: inline;}
-
+	#headertitle{display: none;}
+	#headertitlemob{display: inline;}
 }
+
 
 @media all and (max-width: $max-blog-title-length){
 		.title{float: none; text-align: left;}
