@@ -446,6 +446,21 @@ img{
 	overflow: hidden;
 }
 
+.trust-post{
+	display: inline-block;
+	max-width: 550px;
+	height: 500px;
+	margin-top: 10px;
+	text-align: justify;
+	vertical-align: top;
+}
+
+.trust-post img{
+	max-width: 200px;
+	max-height: 200px;
+	float: left;
+}
+
 /* Footer */
 
 #footer{
@@ -475,12 +490,14 @@ img{
 @media all and (max-width: 350px){
 	.homebox{max-width: 95%; height: auto;}
 	.com-post img{max-width: 95%}
+	.trust-post img{max-width: 95%}
 }
 @media all and (max-width: 1121px){
 	.com-post{height: auto;}
+	.trust-post{height: auto;}
 }
 
 @media all and (max-width: $max-blog-title-length){
-		.title{float: none; text-align: left;}
+	.title{float: none; text-align: left;}
 	.date{text-align: left; padding-left: 10px;}
 }
