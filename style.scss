@@ -38,6 +38,13 @@ $header-height-plus-ten: 70px;
 		border-radius: 10px;
 		background-color: $primary-color-dark;
 	}
+	h1{
+		border: solid 4px $primary-color-dark;
+		padding: 5px;
+		border-radius: 8px;
+		font-size: 3em;
+		
+	}
 	box-sizing:border-box;
 	max-width: 100%;
 	
