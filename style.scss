@@ -38,6 +38,13 @@ $header-height-plus-ten: 70px;
 		border-radius: 10px;
 		background-color: $primary-color-dark;
 	}
+	.content h1{
+		border: solid 4px $primary-color-dark;
+		padding: 5px;
+		border-radius: 8px;
+		font-size: 3em;
+		
+	}
 	box-sizing:border-box;
 	max-width: 100%;
 	
@@ -58,6 +65,12 @@ $header-height-plus-ten: 70px;
 	background: $primary-color-dark;
 }
 
+#homedividerthin{
+	margin-top: 20px;
+	height: 4px;
+	background: $primary-color-dark;
+}
+
 h1{
 	color: $primary-color-dark;
 }
@@ -65,6 +78,7 @@ h1{
 .homebox{
 	width: 350px;
 	height: 250px;
+	margin-top: 20px;
 	display: inline-block;
 	text-align: justify;
 	border: 2px solid $primary-color-dark;
@@ -81,6 +95,24 @@ h1{
 	}
 }
 
+#logo{
+	width: 250px;
+	img{
+		max-width: 95%;
+		max-height: 95%;
+	}
+	
+}
+
+.homebox2{
+	width: 350px; 
+	display: inline-block;
+	vertical-align: top;
+	img{
+		max-width: 95%;
+		max-height: 95%;
+	}
+}
 
 /* General */
 
@@ -344,7 +376,7 @@ img{
 
 #navtitle{
 	float: left;
-	padding-top: 12px;
+	padding-top: 16.5px;
 	padding-left: 8px;
 	a{
 		color: $primary-color-light;
