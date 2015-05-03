@@ -120,14 +120,10 @@ img{
 
 
 /* Navigation bar */
-
-.nav{
+.webnav
+{
 	background-color: $primary-color-dark;
 	font-size: 1.5em;
-}
-
-#webnav
-{
 	position: fixed;
 	top:0px;
 	color: $primary-color-light;
@@ -137,14 +133,14 @@ img{
 	text-align: right;
 }
 
-#webnav img
+.webnav img
 {
 	float: left;
 	padding: 2px;
 	border-radius: 8px;
 }
 
-#webnav ul
+.webnav ul
 {
 	list-style: none;
 	height: 22px;
@@ -154,13 +150,13 @@ img{
 
 }
 
-#webnav ul li:nth-child(1)
+.webnav ul li:nth-child(1)
 {
 	margin-left: 10px;
 }
 
 
-#webnav ul li
+.webnav ul li
 {
 	float: left;
 	display: block;
@@ -172,7 +168,7 @@ img{
 	position: relative;
 }
 
-#webnav .menulist li>:first-child
+.webnav .menulist li>:first-child
 {
 	text-decoration: none;
 	color: $primary-color-light;
@@ -185,14 +181,14 @@ img{
 	border-radius: 6px;
 }
 
-#webnav .dropdownitem
+.webnav .dropdownitem
 {
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
 
 
-#webnav .dropdownlist > li :hover
+.webnav .dropdownlist > li :hover
 {
 	border-color: $primary-color-light;
 	background: $primary-color-light;
@@ -202,39 +198,39 @@ img{
 
 
 	
-#webnav .dropdownlist > li:last-child :hover
+.webnav .dropdownlist > li:last-child :hover
 {
 	border-bottom-right-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
 
-#webnav .menulist > li:hover >:first-child
+.webnav .menulist > li:hover >:first-child
 {
 	border-color: $primary-color-light;
 	background: $primary-color-light;
 	color: $primary-color-dark;
 }
 
-#webnav li:hover > .dropdownlist
+.webnav li:hover > .dropdownlist
 {
 	display: block;
 }
 
-#webnav li:hover
+.webnav li:hover
 {
 	border-color: $primary-color-dark;
 	background: $primary-color-dark;
 	color: $primary-color-light;
 }
 	
-#webnav .dropdownlist
+.webnav .dropdownlist
 {
 	display: none;
 	position: absolute;
 	padding-left: 0px;
 	margin-left: -2px;
 }
-#webnav .dropdownlist li
+.webnav .dropdownlist li
 {
 	text-decoration: none;
 	color: $primary-color-light;
@@ -248,14 +244,14 @@ img{
 	border-left: 2px;
 	border-right: 2px;;
 }
-#webnav .dropdownlist li:first-child
+.webnav .dropdownlist li:first-child
 {
 	margin-left: 0px;
 	margin-top: 1px;
 	border-top: 2px;
 }
 
-#webnav .dropdownlist li:last-child
+.webnav .dropdownlist li:last-child
 {
 		border-bottom: 2px;
 		border-bottom-left-radius: 8px;
@@ -265,47 +261,61 @@ img{
 
 
 
-#mobnav{
+.mobnav{
+	background-color: $primary-color-dark;
+	font-size: 1.5em;
 	z-index: 1000;
 	text-align: left;
-	max-width: 300px;
+	max-width: 270px;
 	left: -300px;
 	position: fixed;
 	a{
 		color: $primary-color-light;
-		margin: 10px;
+		padding: 10px;
 		display: block;
 	}
 }
 
-#mobnav ul
+.mobnav ul
 {
 	list-style: none;
 	height: 22px;
 	margin-top: 1px;
-	padding-left: 10px;
+	padding-left: 0px;
 	text-align: left;
 
 }
 
-#mobnav label
+.mobnav label
 {
 	color: $primary-color-light;
 	margin: 10px;
 	display: block;
 }
-#mobnav ul li
+.mobnav ul li
 {
 	float: left;
 	display: block;
-	margin-top: 2px;
-	margin-right: 10px;
 	background: $primary-color-dark;
 	position: relative;
+	width: 100%;
 }
 
 .mobdropdownlist{
 	display: none;
+	border-color: $primary-color-light;
+	background: $primary-color-light;
+	color: $primary-color-dark;
+	li{
+		border-color: $primary-color-light;
+		background: $primary-color-light;
+		color: $primary-color-dark;
+	}
+	a{
+		border-color: $primary-color-light;
+		background: $primary-color-light;
+		color: $primary-color-dark;
+	}
 }
 
 .mobmenulist li{
@@ -318,16 +328,17 @@ img{
 	background: $primary-color-light;
 }
 
-#mobnav li:hover
+.mobnav li:hover
 {
 	border-color: $primary-color-dark;
 	background: $primary-color-dark;
 	color: $primary-color-light;
 }
 
-.mobdropdownitem input:checked + ul{
+.mobdropdownitem input:checked + ul{	
 	display: block;
 }
+
 
 
 
