@@ -150,6 +150,9 @@ img{
 	text-align: left;
 }
 
+.pagetitle{
+	text-align: center;
+}
 
 /* Navigation bar */
 .webnav
@@ -516,7 +519,23 @@ img{
 	font-size: 20px;
 	position: fixed;
 	bottom: 0px;
+	div{
+		display: inline-block;
+	}
 }
+
+#footer-social{
+	float: left;
+	img{
+		max-width: 30px;
+		max-height: 30px;
+	}
+	p{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+}
+
 
 
 
