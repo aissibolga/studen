@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-
-<div class="post">
-<h2 class="title">{{page.title}}</h2>
-	<p class="date"><span class="aligner"></span>{{ page.date | date_to_long_string }}</p>
-	<div class="blogdivider"></div>
-	{{content}}
+<div class="content">
+	<div class="post">
+		<h2 class="title">{{page.title}}</h2>
+		<p class="date"><span class="aligner"></span>{{ page.date | date_to_long_string }}</p>
+		<div class="blogdivider"></div>
+		{{content}}
+	</div>
 </div>
