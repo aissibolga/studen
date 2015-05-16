@@ -1,14 +1,17 @@
 ---
+category: blog
 ---
 <div class="content" id="blog">
 	<h1 class="pagetitle">Blog</h1>
 {% for post in paginator.posts %}
-<div class="post">
-	<a href="{{post.url}}"> <h2 class="title">{{post.title}}</h2></a>
-	<p class="date"><span class="aligner"></span>{{ post.date | date_to_long_string }}</p>
-	<div class="blogdivider"></div>
-	{{post.content}}
-</div>
+	{% if post.categories contains 'blog' %}
+		<div class="post">
+			<a href="{{post.url}}"> <h2 class="title">{{post.title}}</h2></a>
+			<p class="date"><span class="aligner"></span>{{ post.date | date_to_long_string }}</p>
+			<div class="blogdivider"></div>
+			{{post.content}}
+		</div>
+	{% endif %}
 {% endfor %}
 
 <div class="pagination-links">
