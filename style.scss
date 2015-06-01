@@ -19,10 +19,20 @@ $header-height-plus-ten: 70px;
 	&:hover{border-bottom: 1px solid rgba($color, 1);}
 }
 
+.rotateme{
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	margin-top: 30px;
+}
+
+
 
 /* Home Page */
 #hometop{
-	background: url('images/homepage.jpg');
+	background: url('images/page/homepage.jpg');
 	background-size: cover;
 	height: 100vh;
 	width:100%;
@@ -145,6 +155,7 @@ p{
 }
 img{
 	margin: 8px;
+	max-width: 400px;
 }
 
 #involved-tutors{
