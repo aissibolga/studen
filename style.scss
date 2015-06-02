@@ -1,8 +1,9 @@
 ---
 ---
 
-$primary-color-light: #d7dcee;
-$primary-color-dark: #2f68a1;
+$primary-text-color: #FFF;
+$primary-color-light: #C5CAE9;
+$primary-color-dark: #3F51B5;
 $blog-title-font-size: 1.5em;
 $max-blog-title-length: 850px;
 $max-page-width: 1200px;
@@ -42,7 +43,7 @@ $header-height-plus-ten: 70px;
 }
 #homecontent{
 	a{
-		color: $primary-color-light;
+		color: $primary-text-color;
 		padding: 20px;
 		margin: 20px;
 		border-radius: 10px;
@@ -126,6 +127,11 @@ h1{
 
 /* General */
 
+#titletext{
+	color: $primary-text-color;
+	font-size: 100px;
+}
+
 .anchor{
 	display: block;
 	height: $header-height;
@@ -182,7 +188,7 @@ img{
 	font-size: 1.5em;
 	position: fixed;
 	top:0px;
-	color: $primary-color-light;
+	color: $primary-text-color;
 	width: 100%;
 	height: $header-height;
 	z-index: 1000;
@@ -227,7 +233,7 @@ img{
 .webnav .menulist li>:first-child
 {
 	text-decoration: none;
-	color: $primary-color-light;
+	color: $primary-text-color;
 	float: none;
 	display: block;
 	background: $primary-color-dark;
@@ -276,8 +282,10 @@ img{
 {
 	border-color: $primary-color-dark;
 	background: $primary-color-dark;
-	color: $primary-color-light;
+	color: $primary-text-color;
 }
+
+
 
 .webnav .dropdownlist
 {
@@ -289,7 +297,7 @@ img{
 .webnav .dropdownlist li
 {
 	text-decoration: none;
-	color: $primary-color-light;
+	color: $primary-text-color;
 	float: none;
 	display: block;
 	background: $primary-color-dark;
@@ -326,7 +334,7 @@ img{
 	left: -300px;
 	position: fixed;
 	a{
-		color: $primary-color-light;
+		color: $primary-text-color;
 		padding: 10px;
 		display: block;
 	}
@@ -344,7 +352,7 @@ img{
 
 .mobnav label
 {
-	color: $primary-color-light;
+	color: $primary-text-color;
 	margin: 10px;
 	display: block;
 }
@@ -403,7 +411,7 @@ img{
 	padding-top: 16.5px;
 	padding-left: 8px;
 	a{
-		color: $primary-color-light;
+		color: $primary-text-color;
 	}
 }
 
@@ -464,7 +472,7 @@ img{
 .button{
 	padding: 10px;
 	background-color: $primary-color-dark;
-	color: $primary-color-light;
+	color: $primary-text-color;
 	border-radius: 5px;
 	margin: 10px;
 }
@@ -536,7 +544,7 @@ img{
 	padding-bottom: 20px;
 	width: 100%;
 	text-align: center;
-	color: $primary-color-light;
+	color: $primary-text-color;
 	font-size: 20px;
 	position: fixed;
 	bottom: 0px;
