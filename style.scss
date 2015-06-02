@@ -27,7 +27,7 @@ $header-height-plus-ten: 70px;
     -o-transform: rotate(90deg);
 	transform: rotate(90deg);
 	margin-top: 30px;
-}
+	}
 
 
 
@@ -172,6 +172,10 @@ img{
 
 .pagetitle{
 	text-align: center;
+	border: solid 4px $primary-color-dark;
+		padding: 5px;
+		border-radius: 8px;
+		font-size: 3em;
 }
 
 /* Navigation bar */
