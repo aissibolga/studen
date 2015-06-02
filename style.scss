@@ -38,7 +38,7 @@ $header-height-plus-ten: 70px;
 	width:100%;
 	margin-top:-$header-height;
 	
-
+	
 }
 #homecontent{
 	a{
@@ -126,7 +126,12 @@ h1{
 
 /* General */
 
-
+.anchor{
+	display: block;
+	height: $header-height;
+	margin-top: - $header-height;
+	visibility: hidden;
+}
 .content{
 	max-width: $max-page-width;
 	margin: 0px auto;
@@ -198,7 +203,7 @@ img{
 	margin-top: 1px;
 	padding-left: 63px;
 	text-align: left;
-
+	
 }
 
 .webnav ul li:nth-child(1)
@@ -248,7 +253,7 @@ img{
 }
 
 
-	
+
 .webnav .dropdownlist > li:last-child :hover
 {
 	border-bottom-right-radius: 4px;
@@ -273,7 +278,7 @@ img{
 	background: $primary-color-dark;
 	color: $primary-color-light;
 }
-	
+
 .webnav .dropdownlist
 {
 	display: none;
@@ -304,9 +309,9 @@ img{
 
 .webnav .dropdownlist li:last-child
 {
-		border-bottom: 2px;
-		border-bottom-left-radius: 8px;
-		border-bottom-right-radius: 8px;
+	border-bottom: 2px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 
@@ -334,7 +339,7 @@ img{
 	margin-top: 1px;
 	padding-left: 0px;
 	text-align: left;
-
+	
 }
 
 .mobnav label
@@ -455,7 +460,7 @@ img{
 .pagination-links{
 	text-align: center;
 }
-	
+
 .button{
 	padding: 10px;
 	background-color: $primary-color-dark;
