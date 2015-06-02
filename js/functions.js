@@ -59,8 +59,10 @@ function stretch_footer()
 function expandmobnav()
 {
 	if( document.getElementById('mobnav').style.left=="0px"){
-		document.getElementById('mobnav').style.left="-300px"
+		document.getElementById('mobnav').style.left="-300px";
+		document.getElementById("hidemobnav").style.display="none";
 	}else{
-		document.getElementById('mobnav').style.left="0px"
+		document.getElementById('mobnav').style.left="0px";
+		document.getElementById("hidemobnav").style.display="block";
 	}
 }

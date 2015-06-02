@@ -3,11 +3,12 @@
 {% include head.html %}
 <body onload="stretch_footer()" onresize="stretch_footer()">
 	{% include header.html %}
-	
+	<div id="hidemobnav" onclick="expandmobnav()"></div>
 	
 		{{ content }}
 	
 	
 	{% include footer.html %}
+	
 </body>
 </html>
