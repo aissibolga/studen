@@ -57,19 +57,9 @@ $header-height-plus-ten: 70px;
 		
 	}
 	box-sizing:border-box;
-	max-width: 100%;
-	
-	
+	max-width: 100%;	
 }
 
-#getInvolved a{
-	position: absolute;
-	left: 50%;
-	top: 75%;
-	transform: translateY(-50%) translateX(-50%);
-	color: $primary-color-dark;
-	background: $primary-color-light;
-}
 
 #homedivider{
 	height: 60px;
