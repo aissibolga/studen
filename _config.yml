@@ -1,5 +1,5 @@
 name: "students4students"
-url: "https://belajarperhotelan/studen"
+url: "https://belajarperhotelan.eu.org/studen"
 
 paginate: 5
 paginate_path: "/blog/page:num/"
